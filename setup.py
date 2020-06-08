@@ -5,7 +5,7 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-        name="cerebstat",
+        name="cerebstats",
         version="0.0.1-ALPHA",
         author="Lungsi",
         author_email="lungsi.sharma@unic.cnrs-gif.fr",
@@ -18,8 +18,8 @@ setup(
                   "cerebunit.statistics.stat_scores",
                   "cerebunit.statistics.hypothesis_testings"
                   ],
-        url="https://github.com/cerebunit/cerebstat",
-        download_url = "https://github.com/cerebunit/cerestat/archive/v0.0.1-ALPHA.tar.gz",
+        url="https://github.com/cerebunit/cerebstats",
+        download_url = "https://github.com/cerebunit/cerestats/archive/v0.0.1-ALPHA.tar.gz",
         keywords = ["VALIDATION", "CEREBELLUM", "NEUROSCIENCE",
                     "MODELING", "SCIENTIFIC METHOD"],
         license="BSD Clause-3",
