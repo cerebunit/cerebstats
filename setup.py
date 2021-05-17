@@ -6,7 +6,7 @@ except ImportError:
 
 setup(
         name="cerebstats",
-        version="0.0.1-ALPHA",
+        version="0.0.1",
         author="Lungsi",
         author_email="lungsi.sharma@unic.cnrs-gif.fr",
         #packages=find_packages(),
