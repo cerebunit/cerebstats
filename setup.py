@@ -16,7 +16,7 @@ setup(
                   "cerebstats.hypothesis_testings"
                   ],
         url="https://github.com/cerebunit/cerebstats",
-        download_url = "https://github.com/cerebunit/cerestats/archive/v0.0.1-ALPHA.tar.gz",
+        download_url = "https://github.com/cerebunit/cerestats/archive/v0.0.1.tar.gz",
         keywords = ["VALIDATION", "CEREBELLUM", "NEUROSCIENCE",
                     "MODELING", "SCIENTIFIC METHOD"],
         license="BSD Clause-3",
