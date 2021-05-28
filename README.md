@@ -2,7 +2,7 @@
 
 # CerebStats
 
-The statistical library for cerebtests.
+The statistical library for [CerebUnit](https://github.com/cerebunit/cerebunit).
 
 [CerebStats documentation](https://cerebstats.readthedocs.io/en/latest/)
 
