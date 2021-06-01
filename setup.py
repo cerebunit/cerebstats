@@ -21,7 +21,7 @@ setup(
                     "MODELING", "SCIENTIFIC METHOD"],
         license="BSD Clause-3",
         description="Installable package 'cerebstats' for cerebunit",
-        long_description="Statistical package necessary for running validation test on cerebellum models. Three components of CerebUnit: CerebModels, CerebData, CerebStats (install), and CerebTests (install).",
+        long_description="Statistical package necessary for running validation test on cerebellum models. Four components of CerebUnit: CerebModels, CerebData, CerebStats (install), and CerebTests (install).",
         install_requires=[
             "sciunit",
             "quantities",
