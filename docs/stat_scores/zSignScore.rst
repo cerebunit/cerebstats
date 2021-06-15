@@ -2,5 +2,5 @@
 
 Compute z-statistic for Sign test (``ZScoreForSignTest``)
 *********************************************************
-.. automodule:: cerebunit.stat_scores.zSignScore
+.. automodule:: cerebstats.stat_scores.zSignScore
    :members:

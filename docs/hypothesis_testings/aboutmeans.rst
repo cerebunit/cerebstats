@@ -2,5 +2,5 @@
 
 Hypothesis testing about means (``HtestAboutMeans``)
 ****************************************************
-.. automodule:: cerebunit.hypothesis_testings.aboutmeans
+.. automodule:: cerebstats.hypothesis_testings.aboutmeans
    :members:

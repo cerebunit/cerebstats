@@ -2,5 +2,5 @@
 
 Compute test-statistic for McNemar-test on proportions as the categorical variable of discordant pairs (``McNemarScore``)
 *************************************************************************************************************************
-.. automodule:: cerebunit.stat_scores.mcNemarScore
+.. automodule:: cerebstats.stat_scores.mcNemarScore
    :members:

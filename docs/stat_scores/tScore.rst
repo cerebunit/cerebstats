@@ -2,5 +2,5 @@
 
 Compute t-statistic (``TScore``)
 ********************************
-.. automodule:: cerebunit.stat_scores.tScore
+.. automodule:: cerebstats.stat_scores.tScore
    :members:

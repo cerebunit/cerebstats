@@ -2,7 +2,7 @@
 
 Data condition for HT about means (``NecessaryForHTMeans``). Is t-Test valid?
 *****************************************************************************
-.. automodule:: cerebunit.data_conditions.forHTmeans
+.. automodule:: cerebstats.data_conditions.forHTmeans
    :members:
 
 Below shows a rough road-map
