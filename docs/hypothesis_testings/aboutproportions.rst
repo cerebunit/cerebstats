@@ -2,5 +2,5 @@
 
 Hypothesis testing about proportions (``HtestAboutProportions``)
 ****************************************************************
-.. automodule:: cerebunit.statistics.hypothesis_testings.aboutproportions
+.. automodule:: cerebunit.hypothesis_testings.aboutproportions
    :members:

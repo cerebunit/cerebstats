@@ -2,5 +2,5 @@
 
 Compute z-statistic (``ZScoreStandard``)
 ****************************************
-.. automodule:: cerebunit.statistics.stat_scores.zScore
+.. automodule:: cerebunit.stat_scores.zScore
    :members:

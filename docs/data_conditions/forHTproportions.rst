@@ -2,7 +2,7 @@
 
 Data condition for HT about proportions (``NecessaryForHTProportions``). Is z-Test or :math:`\\chi^2`-testvalid?
 ****************************************************************************************************************
-.. automodule:: cerebunit.statistics.data_conditions.forHTproportions
+.. automodule:: cerebunit.data_conditions.forHTproportions
    :members:
 
 .. Below shows a rough road-map

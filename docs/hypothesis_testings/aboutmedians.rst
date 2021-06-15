@@ -2,5 +2,5 @@
 
 Hypothesis testing about medians (``HtestAboutMedians``)
 ********************************************************
-.. automodule:: cerebunit.statistics.hypothesis_testings.aboutmedians
+.. automodule:: cerebunit.hypothesis_testings.aboutmedians
    :members:
