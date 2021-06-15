@@ -1,5 +1,5 @@
 # ============================================================================
-# ~/cerebstats/cerebstats/stat_scores/zSignScore.py
+# ~/cerebunit/cerebstats/stat_scores/zSignScore.py
 #
 # This py-file contains custum score functions initiated by
 #

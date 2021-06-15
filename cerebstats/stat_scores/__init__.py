@@ -1,4 +1,4 @@
-# ~/cerebstats/cerebstats/stat_scores/__init__.py
+# ~/cerebunit/cerebstats/stat_scores/__init__.py
 
 from .tScore import TScore
 from .zScore import ZScoreStandard
