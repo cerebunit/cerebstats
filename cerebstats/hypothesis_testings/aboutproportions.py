@@ -1,5 +1,5 @@
 # ============================================================================
-# ~/cerebstats/cerebstats/hypothesis_testings/aboutproportions.py
+# ~/cerebunit/cerebstats/hypothesis_testings/aboutproportions.py
 #
 # This py-file contains custom score functions initiated by
 #

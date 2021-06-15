@@ -1,4 +1,4 @@
-# ~/cerebstats/cerebstats/__init__.py
+# ~/cerebunit/cerebstats/__init__.py
 
 __version__ = "0.0.1"
-__all__ = ["statistics"]
+__all__ = ["data_conditions", "hypothesis_testings", "stat_scores"]

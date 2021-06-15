@@ -1,5 +1,5 @@
 # =============================================================================
-# ~/cerebstats/cerebstats/data_conditions/forHTmeans.py
+# ~/cerebunit/cerebstats/data_conditions/forHTmeans.py
 #
 # create 3 July 2019 Lungsi
 #

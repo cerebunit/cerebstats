@@ -1,5 +1,5 @@
 # =============================================================================
-# ~/cerebstats/cerebstats/data_conditions/forHTproportions.py
+# ~/cerebunit/cerebstats/data_conditions/forHTproportions.py
 #
 # create 18 October 2019 Lungsi
 #
