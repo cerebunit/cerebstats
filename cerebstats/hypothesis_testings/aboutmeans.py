@@ -142,16 +142,19 @@ class HtestAboutMeans:
     def _compute_pvalue(self):
         "Returns the p-value."
         if self.test_statistic_name == "t":
-            left_side = student_t.cdf(self.test_statistic, self.deg_of_freedom)
+            if self.side is "less_than":
+                return student_t.cdf(self.test_statistic, self.deg_of_freedom)
+            elif self.side is "greater_than":
+                return student_t.sf(self.test_statistic, self.deg_of_freedom)
+            else: #side is "not_equal"
+                return 2 * student_t.sf(self.test_statistic, self.deg_of_freedom)
         elif self.test_statistic_name == "z":
-            left_side = norm.sf(self.test_statistic)
-        #
-        if self.side is "less_than":
-            return left_side
-        elif self.side is "greater_than":
-            return 1-left_side
-        else: #side is "not_equal"
-            return 2*(1-left_side)
+            if self.side is "less_than":
+                return norm.cdf(self.test_statistic)
+            elif self.side is "greater_than":
+                return norm.sf(self.test_statistic)
+            else: #side is "not_equal"
+                return 2 * norm.sf(self.test_statistic)
 
     def test_outcome(self):
         """Puts together the returned values of :py:meth:`.null_hypothesis`, :py:meth:`.alternate_hypothesis`, and :py:meth:`._compute_pvalue`. Then returns the string value for ``.outcome``.
