@@ -205,7 +205,7 @@ class HtestAboutProportions:
         elif self.side is "greater_than":
             return norm.sf(self.test_statistic)
         else:  # side is "not_equal"
-            return 2 * norm.sf(self.test_statistic)
+            return 2 * norm.sf(abs(self.test_statistic))
 
     def test_outcome(self):
         """Puts together the returned values of :py:meth:`.null_hypothesis`, :py:meth:`.alternate_hypothesis`, and :py:meth:`._compute_pvalue`. Then returns the string value for ``.outcome``.

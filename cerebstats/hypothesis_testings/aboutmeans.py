@@ -147,14 +147,14 @@ class HtestAboutMeans:
             elif self.side is "greater_than":
                 return student_t.sf(self.test_statistic, self.deg_of_freedom)
             else: #side is "not_equal"
-                return 2 * student_t.sf(self.test_statistic, self.deg_of_freedom)
+                return 2 * student_t.sf(abs(self.test_statistic), self.deg_of_freedom)
         elif self.test_statistic_name == "z":
             if self.side is "less_than":
                 return norm.cdf(self.test_statistic)
             elif self.side is "greater_than":
                 return norm.sf(self.test_statistic)
             else: #side is "not_equal"
-                return 2 * norm.sf(self.test_statistic)
+                return 2 * norm.sf(abs(self.test_statistic))
 
     def test_outcome(self):
         """Puts together the returned values of :py:meth:`.null_hypothesis`, :py:meth:`.alternate_hypothesis`, and :py:meth:`._compute_pvalue`. Then returns the string value for ``.outcome``.
