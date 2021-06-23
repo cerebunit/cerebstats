@@ -2,3 +2,4 @@
 
 from .aboutmeans import HtestAboutMeans
 from .aboutmedians import HtestAboutMedians
+#from .aboutproportions import HtestAboutProportions
