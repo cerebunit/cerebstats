@@ -179,7 +179,8 @@ class HtestAboutMeans:
         x = { "u0": self.popul_parameter, "u": self.sample_statistic,
               "hypotest": self.test_statistic_name+"-Test for HT about means",
               "n": self.sample_size,
-              self.test_statistic_name: self.test_statistic }
+              self.test_statistic_name: self.test_statistic,
+              "p": self.pvalue, "side": self.side  }
         if self.test_statistic_name=="t":
             x.update( {"se": self.standard_error,
                        "df": self.deg_of_freedom} )

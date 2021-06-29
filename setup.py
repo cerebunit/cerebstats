@@ -6,7 +6,7 @@ except ImportError:
 
 setup(
         name="cerebstats",
-        version="0.0.2",
+        version="0.0.3",
         author="Lungsi",
         author_email="lungsi.sharma@unic.cnrs-gif.fr",
         #packages=find_packages(),
@@ -16,7 +16,7 @@ setup(
                   "cerebstats.hypothesis_testings"
                   ],
         url="https://github.com/cerebunit/cerebstats",
-        download_url = "https://github.com/cerebunit/cerebstats/archive/refs/tags/v0.0.2.tar.gz",
+        download_url = "https://github.com/cerebunit/cerebstats/archive/refs/tags/v0.0.3.tar.gz",
         keywords = ["VALIDATION", "CEREBELLUM", "NEUROSCIENCE",
                     "MODELING", "SCIENTIFIC METHOD"],
         license="BSD Clause-3",
