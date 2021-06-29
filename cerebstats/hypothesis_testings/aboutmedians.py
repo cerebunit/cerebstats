@@ -161,12 +161,12 @@ class HtestAboutMedians:
 
     @staticmethod
     def null_hypothesis(symbol_null_value, symbol_sample_statistic):
-        "Returns the statement for the null hypothesis, H0."
+        """Returns the statement for the null hypothesis, H0."""
         return "\nH0: "+ symbol_sample_statistic +" = "+ symbol_null_value
 
     @staticmethod
     def alternate_hypothesis(side, symbol_null_value, symbol_sample_statistic):
-        "Returns the statement for the alternate hypothesis, Ha."
+        """Returns the statement for the alternate hypothesis, Ha."""
         if side is "less_than":
             return "\nHa: "+ symbol_sample_statistic +" < "+ symbol_null_value
         elif side is "greater_than":
@@ -175,7 +175,7 @@ class HtestAboutMedians:
             return "\nHa: "+ symbol_sample_statistic +" =/= "+ symbol_null_value
 
     def _compute_pvalue(self):
-        "Returns the p-value."
+        """Returns the p-value."""
         if self.side is "less_than":
             return norm.cdf(self.z_statistic)
         elif self.side is "greater_than":
@@ -200,7 +200,7 @@ class HtestAboutMedians:
         return parameters+outcome
 
     def get_below_equal_above(self, data):
-        "Set values for the attributes ``.below``, ``.equal``, and ``.above`` the null value, :math:`\\eta_0` = ``.specified_value``."
+        """Set values for the attributes ``.below``, ``.equal``, and ``.above`` the null value, :math:`\\eta_0` = ``.specified_value``."""
         self.below = (data < self.specified_value).sum()
         self.equal = (data == self.specified_value).sum()
         self.above = (data > self.specified_value).sum()
@@ -212,7 +212,7 @@ class HtestAboutMedians:
         self.sdTplus = test["sdTplus"]
 
     def _register_statistics(self):
-        "Returns dictionary value for the ``.statistics``."
+        """Returns dictionary value for the ``.statistics``."""
         if self.testname=="sign_test":
             return { "eta0": self.specified_value, "eta": self.sample_statistic,
                      "n": self.sample_size, "hypotest": "Sign Test for HT about medians",

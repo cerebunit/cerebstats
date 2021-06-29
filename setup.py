@@ -8,7 +8,7 @@ setup(
         name="cerebstats",
         version="0.0.3",
         author="Lungsi",
-        author_email="lungsi.sharma@unic.cnrs-gif.fr",
+        author_email="lungsi.ngwua@cnrs.fr",
         #packages=find_packages(),
         packages=["cerebstats",
                   "cerebstats.data_conditions",
@@ -19,7 +19,7 @@ setup(
         download_url = "https://github.com/cerebunit/cerebstats/archive/refs/tags/v0.0.3.tar.gz",
         keywords = ["VALIDATION", "CEREBELLUM", "NEUROSCIENCE",
                     "MODELING", "SCIENTIFIC METHOD"],
-        license="BSD Clause-3",
+        license="BSD Clause-3 Revised",
         description="Installable package 'cerebstats' for cerebunit",
         long_description="Statistical package necessary for running validation test on cerebellum models. Four components of CerebUnit: CerebModels, CerebData, CerebStats (install), and CerebTests (install).",
         install_requires=[

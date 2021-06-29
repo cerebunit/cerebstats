@@ -126,12 +126,12 @@ class HtestAboutMeans:
 
     @staticmethod
     def null_hypothesis(symbol_null_value, symbol_sample_statistic):
-        "Returns the statement for the null hypothesis, H0."
+        """Returns the statement for the null hypothesis, H0."""
         return "\nH0: "+ symbol_sample_statistic +" = "+ symbol_null_value
 
     @staticmethod
     def alternate_hypothesis(side, symbol_null_value, symbol_sample_statistic):
-        "Returns the statement for the alternate hypothesis, Ha."
+        """Returns the statement for the alternate hypothesis, Ha."""
         if side is "less_than":
             return "\nHa: "+ symbol_sample_statistic +" < "+ symbol_null_value
         elif side is "greater_than":
@@ -140,7 +140,7 @@ class HtestAboutMeans:
             return "\nHa: "+ symbol_sample_statistic +" =/= "+ symbol_null_value
 
     def _compute_pvalue(self):
-        "Returns the p-value."
+        """Returns the p-value."""
         if self.test_statistic_name == "t":
             if self.side is "less_than":
                 return student_t.cdf(self.test_statistic, self.deg_of_freedom)
@@ -175,7 +175,7 @@ class HtestAboutMeans:
         return parameters+outcome
 
     def _register_statistics(self):
-        "Returns dictionary value for the ``.statistics``."
+        """Returns dictionary value for the ``.statistics``."""
         x = { "u0": self.popul_parameter, "u": self.sample_statistic,
               "hypotest": self.test_statistic_name+"-Test for HT about means",
               "n": self.sample_size,

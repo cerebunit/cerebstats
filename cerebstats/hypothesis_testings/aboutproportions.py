@@ -185,12 +185,12 @@ class HtestAboutProportions:
 
     @staticmethod
     def null_hypothesis(symbol_null_value, symbol_sample_statistic):
-        "Returns the statement for the null hypothesis, H0."
+        """Returns the statement for the null hypothesis, H0."""
         return "\nH0: "+ symbol_sample_statistic +" = "+ symbol_null_value
 
     @staticmethod
     def alternate_hypothesis(side, symbol_null_value, symbol_sample_statistic):
-        "Returns the statement for the alternate hypothesis, Ha."
+        """Returns the statement for the alternate hypothesis, Ha."""
         if side is "less_than":
             return "\nHa: "+ symbol_sample_statistic +" < "+ symbol_null_value
         elif side is "greater_than":
@@ -240,7 +240,7 @@ class HtestAboutProportions:
         self.successes2 = prediction["success_numbers"]
 
     def _compute_pvalue_from_z(self):
-        "Returns the p-value."
+        """Returns the p-value."""
         right_side = norm.sf(self.z_statistic)
         if self.side is "less_than":
             return 1-right_side 
@@ -250,7 +250,7 @@ class HtestAboutProportions:
             return 2*( norm.sf(abs(self.z_statistic)) )
 
     def _compute_pvalue_exact(self):
-        "Returns the p-value."
+        """Returns the p-value."""
         if self.side is "less_than":
             param = "less"
         elif self.side is "greater_than":
@@ -261,7 +261,7 @@ class HtestAboutProportions:
                            self.specified_value, param )
 
     def _register_statistics(self):
-        "Returns dictionary value for the ``.statistics``."
+        """Returns dictionary value for the ``.statistics``."""
         if self.testname=="proportions_z_test_1pop":
             return { "p0": self.specified_value, "phat": self.sample_statistic,
                      "n": self.sample_size, "x": self.successes,
