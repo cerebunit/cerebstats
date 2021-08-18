@@ -25,6 +25,10 @@ class TestMetrics(object):
     +-----------------------------------------+-----------------+
     | :py:meth:`.get_ppv`                     | instance method |
     +-----------------------------------------+-----------------+
+    | :py:meth:`.display_outcomes`            | instance method |
+    +-----------------------------------------+-----------------+
+    | :py:meth:`.display_metrics`             | instance method |
+    +-----------------------------------------+-----------------+
 
     **Steps to calculate test metrics:**
     
@@ -135,7 +139,7 @@ class TestMetrics(object):
     def display_outcomes(self):
         """
         This function displays the outcomes such as True Positives, False Positives, True Negatives and False Negatives
-        from the calculated metrics.
+        from the calculated metrics in tabular format.
         """
         outcomes = [['TP', self.__TP],
                 ['FP', self.__FP],
@@ -204,6 +208,10 @@ class TestMetrics(object):
         return ppv
 
     def display_metrics(self):
+        """
+        This function displays the metrics such as Specificity, Sensitivity, Negative Predictive Value
+        and Positive Predictive Value in tabular format. 
+        """
         sensitivity = self.get_sensitivity()
         specificity = self.get_specificity()
         npv = self.get_npv()
