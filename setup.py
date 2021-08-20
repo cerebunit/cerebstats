@@ -13,7 +13,9 @@ setup(
         packages=["cerebstats",
                   "cerebstats.data_conditions",
                   "cerebstats.stat_scores",
-                  "cerebstats.hypothesis_testings"
+                  "cerebstats.hypothesis_testings",
+                  "cerebstats.test_quality",
+                  "cerebstats.test_mock_data"
                   ],
         url="https://github.com/cerebunit/cerebstats",
         download_url = "https://github.com/cerebunit/cerebstats/archive/refs/tags/v0.0.3.tar.gz",

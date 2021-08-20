@@ -48,3 +48,21 @@ Checks for Data Conditions (to determine appropriate testing)
 
    data_conditions/forHTmeans.rst
    data_conditions/forHTproportions.rst
+
+Measuring the quality of validation tests
+=========================================
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   test_mock_data/mock_data.rst
+   test_quality/test_metrics.rst
+
+
+How to measure quality of a validation test?
+********************************************
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   misch/notebooks/Measuring_quality_of_validation_tests.ipynb
